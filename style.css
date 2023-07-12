@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .body{
+    display: flex;
+    flex-direction: column;
+} 
+.heading{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+#cards{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* font-size: 1em; */
+    margin: 2em;
+}
+.card{
+   box-shadow: 0 0 4px 3px blue;
+   text-align: center;
+   margin-bottom: 2em;
+    /* font-size: .8em; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 1em;
+   flex-basis: 23em;
+   /* flex: 1; */
+   /* width: 300px; */
+   padding: 2em;
+}
+
+.title{
+    /* font-size: 1em; */
+}
+.category, .price{
+    font-weight: bold;
+    /* text-transform: capital; */
+    margin: 1em;
+    /* font-size: 1.2em; */
+}
+.image{
+    width: 30%;
+}
+
+.header{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    /* gap: 2em; */
+    padding: 1em;
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation a{
+    text-decoration: none;
+    
+}
+.header ul{
+    list-style:none;
+}
+.logo{
+    flex: 1;
+    font-size: 1.4em;
+    
+}
+.search{
+    flex: 2;
+}
+.search input{
+    font-size: 1.2em;
+    padding: 5px;
+}
+.button1{
+    flex:.3;
+    font-size: 1.2em;
+}
+.navigation{
+    flex: 2;
+    font-size: 1.3em;
+}
