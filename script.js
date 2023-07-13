@@ -13,7 +13,8 @@ fetch("https://fakestoreapi.com/products")
         <img src=${values.image} alt="img" class="image">
         <p>${values.description}</p>
         <p class="category">${values.category}</p>
-        <p class="price">${values.price}</p>
+        <p class="price">price $${values.price}</p>
+        <button>Buy Now</button>
     </div>`
     
       });
