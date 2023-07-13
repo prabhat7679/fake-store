@@ -3,17 +3,51 @@
     margin: 0;
     box-sizing: border-box;
 }
- .body{
+ body{
     display: flex;
     flex-direction: column;
+    /* flex-basis: 100%; */
+    /* background-color: aqua; */
+    justify-content: center;
 } 
-.heading{
-    text-align: center;
-    margin-bottom: 1.5rem;
+
+.nav-bar ul{
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 3em;
+    padding-top: 1em;
+    flex-wrap: wrap;
 }
+.nav-bar{
+    background-color: aqua;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search input{
+    font-size: 1.2em;
+    padding: .3em;
+    border-radius: 5px;
+}
+
+.inner-form{
+    font-size: 1.4em;
+}
+
+.All-input{
+    font-size: 1em;
+    padding: 2px;
+    
+}
+.list a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4em ;
+}
+
+
 #cards{
     display: flex;
     /* flex-direction: column; */
@@ -42,63 +76,28 @@
 .title{
     /* font-size: 1em; */
 }
+.image{
+    width: 30%;
+}
 .category, .price{
     font-weight: bold;
     /* text-transform: capital; */
     margin: 1em;
     /* font-size: 1.2em; */
 }
-.image{
-    width: 30%;
-}
 
-.header{
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    /* gap: 2em; */
-    padding: 1em;
-}
-.navigation{
-    display: flex;
-    justify-content: space-evenly;
-}
-.navigation a{
-    text-decoration: none;
-    
-}
-.header ul{
-    list-style:none;
-}
-.logo{
-    flex: 1;
-    font-size: 1.4em;
-    
-}
-.search{
-    flex: 2;
-}
-.search input{
-    font-size: 1.2em;
-    padding: 5px;
-}
 
-.navigation{
-    flex: 2;
-    font-size: 1.3em;
-}
-
-.inner-form{
+/* .inner-form{
     font-size: 1.4em;
 }
 .All-input{
     font-size: 1em;
     padding: 2px;
     
-}
+} */
 .logIn{
     display: flex;
-    /* flex-basis: 30%; */
+    flex-basis: 30%;
     /* background-color: aqua; */
     justify-content: center;
 }
@@ -121,7 +120,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 22em;
+    /* width: 22em; */
     padding: 5px;
 }
 
@@ -133,6 +132,52 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-#tos{
+
+@media screen and (max-width: 765px) {
     
-}
+    .nav-bar{
+        background-color: aqua;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .search{
+        display: none;
+    }
+     .nav-bar h1{
+        text-align: center;
+     }
+
+     nav-bar ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        /* padding-top: 1em; */
+        flex-wrap: wrap;
+    }
+
+    .inner-form{
+        font-size: 1em;
+    }
+
+     .All-input{
+        font-size: 1em;
+        padding: 2px;
+        
+    } 
+    .list a{
+        list-style: none;
+        text-decoration: none;
+        font-size: 1em ;
+    }
+
+    .card{
+        padding: 0;
+    }
+
+ }
