@@ -4,7 +4,7 @@ fetch("https://fakestoreapi.com/products")
      return data.json(); 
   })
   .then((fetchData)=>{
-      console.log(fetchData)
+      // console.log(fetchData) 
       let data1="";
       fetchData.map((values)=>{
 
