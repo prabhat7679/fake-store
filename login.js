@@ -6,7 +6,7 @@
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         const repeatPassword = document.getElementById("repeatPassword").value;
-         const tos = document.getElementById("tos").checked;
+        const tos = document.getElementById("tos").checked;
     
         e.preventDefault()
        
