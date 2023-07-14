@@ -13,7 +13,8 @@ form.addEventListener("submit", function (event) {
   const password = document.getElementById("password").value;
   const repeatPassword = document.getElementById("repeatPassword").value;
   const tosCheckbox = document.getElementById("tos").checked;
-    console.log(tosCheckbox)
+  
+    // console.log(tosCheckbox)
 
   // Validate form fields
   let messagesArr = [];
@@ -59,12 +60,12 @@ form.addEventListener("submit", function (event) {
     messagesArr.push("#error5");
   }
 
-  if (!tos) {
-    document.querySelector("#error6").style.display = "block";
+  if (!tosCheckbox) {
+    document.querySelector(".innertos").style.color = 'red';
   }
-  if (tos) {
-    document.querySelector("#error6").style.display = "none";
-    messagesArr.push("#error6");
+  if (tosCheckbox) {
+    document.querySelector(".innertos").style.color = "black";
+    messagesArr.push("accepted");
   }
 
 
